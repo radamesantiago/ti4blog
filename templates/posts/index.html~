@@ -13,14 +13,6 @@
             </div>
             <div id='iLeft'>
                 <div id='posts'>
-                    {% for post in list_post %}
-                        <div>
-                            <h2>{{ post.titulo }}</h2>
-                            <small>{{ post.data_criacao }}</small>
-                            <br>
-                            {{ post.corpo }}
-                        </div>
-                    {% endfor %}
                 </div>     
                 <div id='posts'>
                 </div>
