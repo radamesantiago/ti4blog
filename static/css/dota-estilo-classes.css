@@ -18,6 +18,96 @@
     margin-top:27px;
 }
 
-.posts{
+.btDota2{
+    display:block;
+    height:77px;
+    background-image: url('/static/img/rightcol_steam_button.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
 
+.btDota2:hover{
+    height:77px;
+    background-image: url('/static/img/rightcol_steam_button.jpg');
+	background-position: 0 -77;
+	background-repeat: no-repeat;
+}
+
+.btPremio{
+    display:block;
+    height:218px;
+    background-image: url('/static/img/compendium_progress.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.btPremio:hover{
+    height:218px;
+    background-image: url('/static/img/compendium_progress.jpg');
+	background-position: 0 -218;
+	background-repeat: no-repeat;
+}
+
+.btFree{
+    display:block;
+    height:164px;
+    background-image: url('/static/img/rcb_freetoplay.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.btFree:hover{
+    height:164px;
+    background-image: url('/static/img/rcb_freetoplay.jpg');
+	background-position: 0 -164;
+	background-repeat: no-repeat;
+}
+
+.bt180{
+    display:block;
+    margin-left:65px;
+    height:103px;
+    background-image: url('/static/img/180.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.bt180:hover{
+    height:103px;
+    background-image: url('/static/img/180.png');
+	background-position: 0 -103;
+	background-repeat: no-repeat;
+}
+
+.posts{
+    font-family: Arial,sans-serif;
+    color: #7D7D7D;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.input_search{
+    position: absolute;
+    border: 0px none;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+    height: 17px;
+    top: 5px;
+    left: 13px;
+    background: none repeat scroll 0% 0% transparent;
+    color: #969AA1;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    outline: medium none;
+    box-shadow: none;
+}
+
+.input_img{
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 215px;
+    top: 3px;
 }

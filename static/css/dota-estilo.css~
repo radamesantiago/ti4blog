@@ -1,9 +1,12 @@
-body{
-    background-image:url("/static/img/skin_background.jpg");
+body{    
     margin:0px;
+    background:black;
 }
 
 #cabecalho{
+    background-image:url("/static/img/skin_background.jpg");
+    height:68px;
+    text-align: center;
     color:#908D8B;
     font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
     text-transform: uppercase;
@@ -14,38 +17,79 @@ body{
 }
 
 #corpo{
-    background:red;
-}
-
-#topo{
-    background:yellow;
-}
-
-#destaque{
-    background:green;
-}
-
-#iLeft{
-    background:blue;
-}
-
-#iRight{
-    background:gray;
-}
-
-#search{
     background:black;
 }
 
+#topo{
+    margin:0px;
+}
+
+#mid{
+    background-image:url("/static/img/skin_background.jpg");
+    width:900px;
+    margin-left:16.7%;
+}
+
+#destaque{    
+    background-image:url('/static/img/tabs_bg.png');
+    background-size:650px 500px;
+    background-repeat:no-repeat;
+    height:500px;
+}
+
+#iLeft{
+    background-image:url("/static/img/skin_background.jpg");
+    background-repeat:no-repeat;
+    width:650px;
+    height:1500px;
+    float:left;
+    padding:30px;
+}
+
+#iRight{
+    width: 260px;
+    background-image:url("/static/img/imagedoc-darknoise.png");
+    position:absolute;
+    margin-left:650px;
+    margin-top:-400px;
+    height:1700px;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: inset 1px 2px 20px 0px black;
+    padding:10px;
+}
+
+#search{
+    width: 245px;
+    height: 27px;
+    position: relative;
+    padding: 0px;
+    margin: 10px 0px 18px;
+    background-image: url('/static/img/searchbar_bg.jpg');    
+}
+
 #links{
-    background:magenta;
+    font-family: Arial,sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 #anuncios{
-    background:Indigo;
 }
 
 #rodape{
-    background:linen;
+    background-image:url("/static/img/skin_background.jpg");
+    height:68px;
+    text-align: center;
+    color:#908D8B;
+    font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;    
+    border: 2px gray;   
+    border-style:solid hidden hidden hidden;
+    clear:both;
+    padding:30px;
 }
 

@@ -1,9 +1,23 @@
-a{
+#cabecalho a{
     text-decoration:none;
     color:#908d8b;
 }
 
-a:active, a:hover{
+#cabecalho a:active,#cabecalho a:hover{
     color: #CFCFCF;
+    text-decoration: none;
+}
+
+#iLeft a{
+    font-family: Georgia,"Bitstream Charter",serif;
+    color:#c33D2B;
+    font-size: 32px;
+    line-height: normal;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px #111;
+    text-align: left;
+}
+
+#ileft a:hover{
     text-decoration: underline;
 }

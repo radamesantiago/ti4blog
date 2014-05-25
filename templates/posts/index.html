@@ -1,5 +1,7 @@
 <html>
     <head>
+        <title>Blog Do Gilgamesh</title>
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.png" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="/static/css/estilo.css" rel="stylesheet" type="text/css" />
         <link href="/static/css/dota-estilo.css" rel="stylesheet" type="text/css" />
@@ -22,7 +24,7 @@
     <body>
     
         <div id='cabecalho'>
-            <div class='language'>Linguagem</div>            
+            <div class='language'>Linguagem pt-br</div>            
             <div id='cabecaTitle' class='cabecaTitle' style='margin-top:10px;display:table;'>
                 <img id='logo1' src='/static/img/en_dota_logo_over.png' style='opacity:0;'>
                 <a target="_blank" href='http://br.dota2.com/?l=portuguese'><img id='logo2' src='/static/img/en_dota_logo.png'></a>
@@ -46,38 +48,52 @@
                 </a>                 
             </div>            
         </div>
-        <div id='corpo'>oi
-            <div id='topo'>oi
+        <div id='corpo'>
+            <div id='topo'>
+                <center><img src='/static/img/bg_thebetaisover.jpg' width='900'></center>
             </div>
-            <div id='destaque'>oi
-            </div>
-            <div id='iLeft'>oi
-                <div id='posts'>
-                    {% for post in list_post %}
-                        <div>
-                            <h2>{{ post.titulo }}</h2>
-                            <small>{{ post.data_criacao }}</small>
-                            <br>
-                            {{ post.corpo }}
-                        </div>
-                    {% endfor %}
-                </div>     
-                <div id='posts'>
+            <div id='mid'>
+                <div id='destaque'>
                 </div>
-                <div id='posts'>
+                <div id='iLeft'>
+                    <div id='posts' class='posts'>
+                        {% for post in list_post %}
+                            <div>
+                                <a>{{ post.titulo }}</a><br>
+                                <small>{{ post.data_criacao }}</small><p>
+                                <br>
+                                {{ post.corpo }}
+                            </div>
+                            <hr width='70%'>
+                        {% endfor %}
+                    </div>                             
                 </div>
-                ...       
-            </div>
-            <div id='iRight'>oi
-                <div id='anuncios'>oi
+                <div id='iRight'>
+                    <div id='anuncios'>
+                        <a target='_blank' href="http://store.steampowered.com/app/570/" class='btDota2'></a><p>
+                        <a target='_blank' href="http://www.dota2.com/international/compendium/" class='btPremio'></a><p>
+                        <a target='_blank' href="http://www.freetoplaythemovie.com/" class='btFree'></a><p>
+                    </div>
+                    <hr>
+                    <div id='search'>
+                        <form>
+                            <input type='text' class='input_search' placeholder='Busca...'>
+                            <input type='image' class='input_img' src='/static/img/searchbar_submit.jpg'>
+                        </form>
+                    </div>
+                    <hr>
+                    <div id='links'>
+                        <center>
+                            Apoio:<p>
+                            <a target='_blank' href="http://180graus.com" class='bt180'></a>
+                        </center>
+                    </div>                                                  
                 </div>
-                <div id='search'>oi
-                </div>
-                <div id='links'>oi
-                </div>                                
+                <img src='/static/img/content_bg_bottom1.png' width='670px' style='margin-left:-10px;float:left;'> 
             </div>
         </div>
-        <div id='rodape'>oi
+        <div style='height:50px;background:black;clear:both;'></div>        
+        <div id='rodape'>Rádames Neiva Santiago - Solo mid - D3adLock - Dota 2
         </div>
                                 
     </body>
