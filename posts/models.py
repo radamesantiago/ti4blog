@@ -5,6 +5,8 @@ class Post(models.Model):
     titulo = models.CharField(max_length = 255)
     corpo = models.TextField()
     data_criacao = models.DateTimeField()
+    video = models.CharField(max_length = 255, blank = True)
+    imagem = models.ImageField(upload_to = 'static/media/')
     
     class Meta:
         verbose_name = 'publicacao'

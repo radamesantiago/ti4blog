@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-#iLeft a{
+.ilink a{
     font-family: Georgia,"Bitstream Charter",serif;
     color:#c33D2B;
     font-size: 32px;
@@ -18,6 +18,14 @@
     text-align: left;
 }
 
-#ileft a:hover{
+.ilink a:hover{
     text-decoration: underline;
+}
+
+small{
+    font-family: Arial,sans-serif;
+    color: #7D7D7D;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 4px;
 }

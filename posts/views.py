@@ -4,9 +4,21 @@ from django.shortcuts import render_to_response
 from posts.models import Post
 from datetime import datetime
 from django.utils.timezone import utc
+from django.core.paginator import Paginator, InvalidPage, EmptyPage
 
 def index(request):
-  return render_to_response('posts/index.html',{
-    'list_post': Post.objects.all().order_by('-data_criacao')
-  })
+    list_post = Post.objects.all().order_by('-data_criacao')
+    paginator = Paginator(list_post, 1)
+    
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+        
+    try:
+        posts = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        posts = paginator.page(paginator.num_pages)        
+        
+    return render_to_response('posts/index.html', {"list_post": posts})                  
 

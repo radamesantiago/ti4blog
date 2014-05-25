@@ -111,3 +111,31 @@
     left: 215px;
     top: 3px;
 }
+
+#paglink{
+    color:#908D8B;
+    font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;  
+    text-decoration:none;
+}
+
+#paglink:hover, #paglink:active{
+    color:#CFCFCF;;
+    font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px; 
+    text-decoration:none;
+}
+
+.pagpag{
+    color:#908D8B;
+    font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;  
+    text-decoration:none;
+}
+

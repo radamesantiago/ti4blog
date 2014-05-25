@@ -59,14 +59,32 @@
                     <div id='posts' class='posts'>
                         {% for post in list_post %}
                             <div>
-                                <a>{{ post.titulo }}</a><br>
+                                <a class='ilink'>{{ post.titulo }}</a><br>
                                 <small>{{ post.data_criacao }}</small><p>
-                                <br>
-                                {{ post.corpo }}
+                                <img src='{{ post.imagem }}' alt='imagem' width='500px' height='250px'><p>  
+                                {{ post.corpo }}<p>
+                                {% if post.video %}
+                                    <iframe width="500" height="345" src='{{ post.video }}'></iframe><p>
+                                {% endif %}                                  
                             </div>
-                            <hr width='70%'>
+                            <hr width='90%' style='margin-left:-0px;'>
                         {% endfor %}
-                    </div>                             
+                    </div>        
+                    <div class="pagination">
+                        <span class="step-links">
+                            {% if list_post.has_previous %}
+                                <a id='paglink' href="?page={{ list_post.previous_page_number }}"><<</a>
+                            {% endif %}
+
+                            <span class="current">
+                                <span class='pagpag'>Página {{ list_post.number }} de {{ list_post.paginator.num_pages }}.</span>
+                            </span>
+
+                            {% if list_post.has_next %}
+                                <a id='paglink' href="?page={{ list_post.next_page_number }}">>></a>
+                            {% endif %}
+                        </span>
+                    </div>                                         
                 </div>
                 <div id='iRight'>
                     <div id='anuncios'>
@@ -93,7 +111,7 @@
             </div>
         </div>
         <div style='height:50px;background:black;clear:both;'></div>        
-        <div id='rodape'>Rádames Neiva Santiago - Solo mid - D3adLock - Dota 2
+        <div id='rodape'>Gilgamesh, the Omni Spirit - Solo mid - D3adLock - Dota 2
         </div>
                                 
     </body>
