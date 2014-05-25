@@ -1,0 +1,23 @@
+.language{
+    color:#666;
+    font-family: arial,sans-serif;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 11px;  
+    position: absolute;
+    width: 1138px;
+    text-align: right;
+    top: 3px;
+    padding-right: 10px;
+    font-size: 11px;
+}
+
+.cabecaTitle{
+    float:left;
+    margin-left:37px;
+    margin-top:27px;
+}
+
+.posts{
+
+}

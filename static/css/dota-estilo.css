@@ -1,3 +1,53 @@
 body{
     background-image:url("/static/img/skin_background.jpg");
+    margin:0px;
 }
+
+#cabecalho{
+    height:68px;
+    text-align: center;
+    color:#908D8B;
+    font-family: goudy_trajan_boldbold,"times new roman",Arial,Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;    
+    border: 2px gray;   
+    border-style:hidden hidden solid hidden;
+}
+
+#corpo{
+    background:red;
+}
+
+#topo{
+    background:yellow;
+}
+
+#destaque{
+    background:green;
+}
+
+#iLeft{
+    background:blue;
+}
+
+#iRight{
+    background:gray;
+}
+
+#search{
+    background:black;
+}
+
+#links{
+    background:magenta;
+}
+
+#anuncios{
+    background:Indigo;
+}
+
+#rodape{
+    background:linen;
+}
+

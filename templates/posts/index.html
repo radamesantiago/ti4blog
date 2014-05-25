@@ -1,17 +1,57 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="/static/css/estilo.css" rel="stylesheet" type="text/css" />
         <link href="/static/css/dota-estilo.css" rel="stylesheet" type="text/css" />
+        <link href="/static/css/dota-estilo-classes.css" rel="stylesheet" type="text/css" />
         <script src="/static/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+        <script>
+        $(function() {
+            $("#cabecaTitle").mouseover(function() {  
+				$('#logo1').attr('src','/static/img/en_dota_logo.png'); 
+				$('#logo2').attr('src','/static/img/en_dota_logo_over.png'); 
+            });
+            
+            $("#cabecaTitle").mouseout(function() {  
+				$('#logo1').attr('src','/static/img/en_dota_logo_over.png'); 
+				$('#logo2').attr('src','/static/img/en_dota_logo.png'); 
+            });            
+        });
+        </script>
     </head>
     <body>
     
         <div id='cabecalho'>
-        </div>
-        <div id='corpo'>
-            <div id='topo'>
+            <div class='language'>Linguagem</div>            
+            <div id='cabecaTitle' class='cabecaTitle' style='margin-top:10px;display:table;'>
+                <img id='logo1' src='/static/img/en_dota_logo_over.png' style='opacity:0;'>
+                <a target="_blank" href='http://br.dota2.com/?l=portuguese'><img id='logo2' src='/static/img/en_dota_logo.png'></a>
             </div>
-            <div id='iLeft'>
+            <div class='cabecaTitle'>
+                <a target='_blank' href='http://steamcommunity.com/market/'>
+                    Mercado
+                    <img src='/static/img/external.png'> 
+                </a>            
+            </div>
+            <div class='cabecaTitle'>
+                <a target="_blank" href='http://dota2.gamepedia.com/Dota_2_Wiki'>
+                    Enciclopédia
+                    <img src='/static/img/external.png'> 
+                </a>                
+            </div>            
+            <div class='cabecaTitle'>
+                <a target="_blank" href='http://dotabuff.com'>
+                    Wall Street do Dota 2  
+                    <img src='/static/img/external.png'>  
+                </a>                 
+            </div>            
+        </div>
+        <div id='corpo'>oi
+            <div id='topo'>oi
+            </div>
+            <div id='destaque'>oi
+            </div>
+            <div id='iLeft'>oi
                 <div id='posts'>
                     {% for post in list_post %}
                         <div>
@@ -28,16 +68,16 @@
                 </div>
                 ...       
             </div>
-            <div id='iRight'>
-                <div id='anuncios'>
+            <div id='iRight'>oi
+                <div id='anuncios'>oi
                 </div>
-                <div id='search'>
+                <div id='search'>oi
                 </div>
-                <div id='links'>
+                <div id='links'>oi
                 </div>                                
             </div>
         </div>
-        <div id='rodape'>
+        <div id='rodape'>oi
         </div>
                                 
     </body>
