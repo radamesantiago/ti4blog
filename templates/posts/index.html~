@@ -73,7 +73,7 @@
                     <div class="pagination">
                         <span class="step-links">
                             {% if list_post.has_previous %}
-                                <a id='paglink' href="?page={{ list_post.previous_page_number }}">anterior</a>
+                                <a id='paglink' href="?page={{ list_post.previous_page_number }}"><<</a>
                             {% endif %}
 
                             <span class="current">
@@ -81,7 +81,7 @@
                             </span>
 
                             {% if list_post.has_next %}
-                                <a id='paglink' href="?page={{ list_post.next_page_number }}">próxima</a>
+                                <a id='paglink' href="?page={{ list_post.next_page_number }}">>></a>
                             {% endif %}
                         </span>
                     </div>                                         
@@ -94,8 +94,9 @@
                     </div>
                     <hr>
                     <div id='search'>
-                        <form>
-                            <input type='text' class='input_search' placeholder='Busca...'>
+                        <form method='post' action='/index/'>{% csrf_token %}
+                        {{ form.as_p }}
+                            <input type='text' id='busca' name='busca' class='input_search' placeholder='Busca...'>
                             <input type='image' class='input_img' src='/static/img/searchbar_submit.jpg'>
                         </form>
                     </div>
