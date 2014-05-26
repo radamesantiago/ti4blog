@@ -7,6 +7,8 @@ class Post(models.Model):
     data_criacao = models.DateTimeField()
     video = models.CharField(max_length = 255, blank = True)
     imagem = models.ImageField(upload_to = 'static/media/')
+    destaque = models.BooleanField()
+    slug = models.SlugField(max_length=100, blank=True)
     
     class Meta:
         verbose_name = 'publicacao'
